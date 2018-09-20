@@ -1,9 +1,9 @@
 # ContentTypeProxy
 
-Dead simple HTTP Proxy that inserts Content-Type if the Content-Type field is missing or empty.
+Dead simple HTTP Proxy that inserts Content-Type if the Content-Type field is missing or empty in the header of POST.
 This is just a PoC to show how easy it is to edit HTTP Header with Proxy.
 
-Please note that this is NOT for production, even it might also be the help for someone in trouble with HTTP Header :sweat_smile:
+Please note that this is NOT for production, even though it might also be the help for someone in trouble with HTTP Header :sweat_smile:
 
 https://seclists.org/fulldisclosure/2018/Sep/16
 
@@ -36,6 +36,10 @@ go build
 
 ### Run
 
+Run ContentTypeProxy on a server, and set your browser's proxy to that server.
+
+Address:Port to listen and Content-Type to be added can be specified in command-line arguments.
+
 ```shell-session
 Usage of ContentTypeProxy:
   -addr string
@@ -44,9 +48,6 @@ Usage of ContentTypeProxy:
         Content-Type to set (default "text/plain")
 ```
 
-### Use
-
-Set your browser's proxy to the address:port you specified in the command-line args above.
 
 ## Author
 
