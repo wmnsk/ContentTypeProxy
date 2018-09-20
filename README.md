@@ -13,6 +13,17 @@ Large part of the code that make it work as HTTP proxy is retrieved from [HTTP(S
 
 ## Installing
 
+### Use Executables
+
+Executables can be found in [releases](https://github.com/wmnsk/ContentTypeProxy/releases) page.
+
+|         |                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------- |
+| Linux   | [ContentTypeProxy](https://github.com/wmnsk/ContentTypeProxy/releases/download/v0.1.0/ContentTypeProxy)         |
+| Windows | [ContentTypeProxy.exe](https://github.com/wmnsk/ContentTypeProxy/releases/download/v0.1.0/ContentTypeProxy.exe) |
+
+### Build yourself
+
 Download `main.go` and build it, and you can get the executable.
 
 ```shell-session
